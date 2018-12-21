@@ -1,0 +1,489 @@
+{% extends 'base.html'%}
+{% load staticfiles %}
+{% block content %}
+	  <div class="board" id="about">
+		  <div class="container">
+
+			  <div class="row">
+				 <div class="col-md-4">
+					<img src="{% static 'blog/img/profile.jpeg'%}">
+				  </div> 
+				 <div class="col-md-8">
+					 	<h2>Tony DongWoo Kang</h2> 
+<ul class="nav nav-tabs" role="tablist">
+  <li class="nav-item">
+    <button type="button" class="btn click active" class="nav-link active" data-toggle="tab" href="#home" role="tab">About</button>
+  </li>
+  <li class="nav-item">
+    <button type="button" class="btn click nav-link" data-toggle="tab" href="#profile" role="tab">Profile</button>
+  </li>
+  <li class="nav-item">
+    <button type="button" class="btn click nav-link" data-toggle="tab" href="#messages" role="tab">Messages</button>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel">			<p>I am a passionate software programmer who recently graduated from Emory University. Since I changed my major lately (Junior Year), I don't have many experience. However, I am eager to learn and improve to become a better software developer. I am looking forward to become a part of amazing development team! 
+	  </p>	 </div>
+  <div class="tab-pane" id="profile" role="tabpanel">				<dl>
+			<dt>Fast Learner</dt>
+		    <dd>Changed major at college junior year and managed to graduate on time</dd>
+			<dt>Tech Guy</dt>
+			<dd>I started to use computer since I was seven and never let it go</dd>
+			<dt>Owner of very cute dog</dt>
+			<dd>Link:(inactive at this point)</dd>
+			</dl></div>
+  <div class="tab-pane" id="messages" role="tabpanel">
+	<ul>
+		<li>Birthday: March 20th</li>							 
+		<li>Current Location: Seoul, South Korea</li>
+		<li>Nationality: Republic of Korea</li>
+		<li>Highest Gaming Achievement: League of Legend Diamond I tier in Season 3</li>
+		<li>Hobby: Lifting weights, exploring new restaurants</li>
+	</ul>
+	</div>
+</div>
+
+			  </div>
+		  </div>
+		  </div>
+</div>
+			  
+	  	<div class="board" id="skill">
+		  <div class="container">
+			  <h3>Abilities</h3>
+			  <div class="col-md-4">
+			  <table class="table">
+				  <thead>
+					  <tr>
+						  <th scope="col" colspan="2">Programming Language</th>
+					  </tr>
+				  </thead>
+				  <tr>
+					  <td>HTML(5)</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+					  </td>
+				  <tr>
+					  <td>CSS(3)</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+					  </td>
+				  </tr>					  
+				  <tr>
+					  <td>Javascript</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+					  </td>
+				  </tr>
+				  <tr>
+					  <td>Java</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+					  </td>
+				  </tr>
+				  <tr>
+					  <td>PHP</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star unchecked"></span>
+					  </td>
+				  </tr>
+				  <tr>
+					  <td>MySQL</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star unchecked"></span>
+					  </td>
+				  </tr>
+				  <tr>
+					  <td>Python</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star unchecked"></span>
+					  </td>
+				  </tr>	
+				  <tr>
+					  <td>C</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star unchecked"></span>
+						  <span class="fa fa-star unchecked"></span>
+					  </td>
+				  </tr>	
+				  <tr>
+					  <td>Unix/Linux Shell</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star unchecked"></span>
+						  <span class="fa fa-star unchecked"></span>
+					  </td>
+				  </tr>					  
+			  </table>
+			  </div>
+			  
+			<div class="col-md-4">
+			  <table class="table">
+				  <thead>
+					  <tr>
+						  <th scope="col" colspan="2">FrameWork/Library/Tools</th>
+					  </tr>
+				  </thead>
+				  <tr>
+					  <td>Boostrap</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+					  </td>
+				  </tr>
+				  <tr>
+					  <td>JQuery</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+					  </td>
+				  </tr>
+				  <tr>
+					  <td>Django</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star unchecked"></span>
+					  </td>
+				  </tr>
+				  <tr>
+					  <td>Laravel</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star unchecked"></span>
+						  <span class="fa fa-star unchecked"></span>
+					  </td>
+				  </tr>					  
+				  <tr>
+					  <td>Git</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+					  </td>
+				  </tr>
+				  <tr>
+					 <td>NodeJS</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star unchecked"></span>
+						  <span class="fa fa-star unchecked"></span>
+					  </td>
+				  	</tr>
+				  <tr>
+					 <td>JDBC</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+					  </td>
+				  </tr>
+				  <tr>
+					 <td>Android</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star unchecked"></span>
+						  <span class="fa fa-star unchecked"></span>
+						  <span class="fa fa-star unchecked"></span>
+					  </td>
+				  </tr>
+			  </table>
+			</div> 
+			<div class="col-md-4">		  
+				<table class="table">
+				  <thead>
+					  <tr>
+						  <th scope="col" colspan="2">Concept</th>
+					  </tr>
+				  </thead>
+				  <tr>
+					  <td>Data Structure</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+					  </td>
+				  <tr>
+					  <td>XML</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+					  </td>
+				  </tr>					  
+				  <tr>
+					  <td>Object Oriented Programming
+					  </td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+					  </td>
+				  </tr>
+				  <tr>
+					  <td>MVC Pattern</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star unchecked"></span>
+					  </td>
+				  </tr>
+				  <tr>
+					  <td>API</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star unchecked"></span>
+					  </td>
+				  </tr>
+				  <tr>
+					  <td>DataMining</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star unchecked"></span>
+						  <span class="fa fa-star unchecked"></span>
+					  </td>
+				  </tr>
+				  <tr>
+					  <td>AI</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star unchecked"></span>
+						  <span class="fa fa-star unchecked"></span>
+						  <span class="fa fa-star unchecked"></span>
+						  <span class="fa fa-star unchecked"></span>
+					  </td>
+				  </tr>	
+				  <tr>
+					  <td>Regular Expression</td>
+					  <td>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star"></span>
+						  <span class="fa fa-star unchecked"></span>
+					  </td>
+				  </tr>	
+			  </table>
+			</div>
+						  
+		  </div>
+		</div>
+			
+		<div class="board" id="experience">
+			<div class="container">
+				<h3>Experiences</h3>
+				<div class="timeline">
+					<h4>Timeline</h4>
+					<div class="row">
+						<div class="col-md-4">
+							<strong>Emory University (Graduated)</strong>
+							<p>August 2016 - December 2018</p>
+						</div>
+						<div class="col-md-8">
+							<strong>Bachelor of Art in Computer Science</strong>
+							<p>Changed my major to computer science. The education was mainly Java-based programming. However, as I take the upper-classes, I also learned about SQL, PHP, C, assembly language, python, etc. The majority of topic was data structure where I have learned about different kinds of data structure and how to make them efficient, low cost. 
+							</p>
+							<p><span class="glyphicon glyphicon-flag"></span> Atlanta, Georgia</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<strong>ROK Army</strong>
+							<p>August 2014-May 2016</p>
+						</div>
+						<div class="col-md-8">
+							<strong>Presidential Security Service, ROK Army</strong>
+							<p>Served mandatory military duty at Capital Defense Command. Selected out of 500 to serve in Presidential Security Service. 
+							<p><span class="glyphicon glyphicon-flag"></span> Seoul, South Korea</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<strong>Emory University</strong>
+							<p>August 2012-May 2014</p>
+						</div>
+						<div class="col-md-8">
+							<strong>Bachelor of art in International Relations</strong>
+							<p>Pursued education until I took two years of a leave of absence for mandatory military duty. 
+							</p>
+							<p><span class="glyphicon glyphicon-flag"></span> Atlanta, Georgia</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<strong>North Broward Preparatory School</strong>
+							<p>August 2008-May 2012</p>
+						</div>
+						<div class="col-md-8">
+							<strong>Student</strong>
+							<p>Received general education and participated in many extra-curricular activities.
+							</p>
+							<p><span class="glyphicon glyphicon-flag"></span> Coconut Creek, Florida</p>
+						</div>
+					</div>
+				</div>
+				<br/>
+				<div class="experience">
+					<h4>LeaderShip experience &amp; Activities</h4>
+					<div class="row">
+						<div class="col-md-4">
+							<strong>The Computer Science Department at Emory University</strong>
+							<p>January 2018-Present</p>
+						</div>
+						<div class="col-md-8">
+							<strong>Research Assistant &amp;Software Engineer</strong>
+							<ul>
+							<li>Designed a Java-based back-end algorithm for Java-syntax practice quiz net with dynamic contents and performance review</li>
+							<li>Designed automated record system by labeling existing Java Introductory class quiz problems on their type </li>
+							<li>Discussed and analyzed a correlation between past students’ performances on each topic and their final grade</li>
+							<li>Effectively designed a front-end side of the website using Bootstrap and JQuery Framework</li>
+							</ul>	
+							<p><span class="glyphicon glyphicon-flag"></span> Atlnata, Georgia</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<strong>K-Dev (Korean undergraduate club for computer science majors)</strong>
+							<p>August 2018-Present</p>
+						</div>
+						<div class="col-md-8">
+							<strong>Executive Board Member</strong>
+							<ul>
+								<li>Provided weekly lectures to cover various programming languages (Java, Python, PHP and SQL) and class materials</li>
+								<li>Assisted graduate student in ‘Machine Learning’ by designing a Tinder swipe prediction program through data-processing and preparation</li>
+								<li>Held one on one troubleshooting environment configuration for programming language and software installation</li>
+							</ul>
+							<p><span class="glyphicon glyphicon-flag"></span> Atlnata, Georgia</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<strong>
+								Band Absolute	
+							</strong>
+							<p>January 2017-May 2018</p>
+						</div>
+						<div class="col-md-8">
+							<strong>Drummer &amp; Treasurer</strong>
+							<ul>
+								<li>Performed at several community gatherings and held 5+ food fundraisers to advertise the band and replace old instruments
+								</li>
+								<li>Performed at LINK (Liberty in North Korea) campaign concert and successfully fundraised $1,000 for North Korean charity</li>
+							</ul>
+							<p><span class="glyphicon glyphicon-flag"></span> Atlnata, Georgia</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	  
+<!--
+					<form action="index.php" method="get">
+						<div class="form-row col-md-6">
+							
+							<div class="form-group">	
+							<label for="inputContact">Contact *</label>
+							<input type="email" class="form-control" id="inputContact" placeholder="Email" maxlength="20">
+							<label for="inputTitle">Title *</label>
+							<input type="text" class="form-control" id="inputTitle" placeholder="Enter title">
+						</div>
+						</div>
+						<div class="form-row">
+						<div class="col-md-8">
+						<label for="inputMessage">Message *</label>
+							<textarea type="text" class="form-control" id="inputMessage" rows="3">
+							</textarea>
+							<br/>
+						<button type="submit" class="btn btn-primary" >Submit</button>							
+						</div>	
+					</div>			
+
+					</form>
+-->
+<!--
+			</div>
+		</div>
+	  </div>
+-->
+    <!--Boostrap, jquery -->
+ {% endblock %}
+<script>
+$(function () {
+
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
+
+    $("ul.tabs li").click(function () {
+        $("ul.tabs li").removeClass("active").css("color", "#333");
+        $(this).addClass("active").css("color", "darkred");
+        $(".tab_content").hide()
+        var activeTab = $(this).attr("rel");
+        $("#" + activeTab).fadeIn()
+    });
+});
+</script>
