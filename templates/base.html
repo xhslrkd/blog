@@ -1,4 +1,4 @@
-{% load staticfiles %}
+﻿{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -65,29 +65,42 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'resume' %}">Resume<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
-      </li>
-    </ul>
-    <div class="my-2 my-lg-0">
-	 	<li class="btn btn-social-icon btn-github">
-			<a href="https://www.github.com/xhslrkd" target="_blank">
-			<span class="fa fa-github"></span></a>  
-		</li>
-	 	<li class="btn btn-social-icon btn-linkedin"> <a href="https://linkedin.com/in/tonydongwookang" target="_blank">
-			<span class="fa fa-linkedin"></span> </a> 
-		</li>
-	 	<li class=" btn btn-social-icon btn-facebook"><a href="https://www.facebook.com/tony.d.kang.5" target="_blank">
-			<span class="fa fa-facebook"></span></a>
-		</li>
-	 	<li class=" btn btn-social-icon btn-google" data-toggle="modal" id="contact"><a href="{% url 'email' %}">
-			<span class="fa fa-google"></span></a> 
-		</li>
-    </div>
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="{% url 'resume' %}">Resume<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+          </li>
+      </ul>
+      <div class="my-2 my-lg-0">
+          <li class="btn btn-social-icon btn-github">
+              <a href="https://www.github.com/xhslrkd" target="_blank">
+                  <span class="fa fa-github"></span>
+              </a>
+          </li>
+          <li class="btn btn-social-icon btn-linkedin">
+              <a href="https://linkedin.com/in/tonydongwookang" target="_blank">
+                  <span class="fa fa-linkedin"></span>
+              </a>
+          </li>
+          <li class=" btn btn-social-icon btn-facebook">
+              <a href="https://www.facebook.com/tony.d.kang.5" target="_blank">
+                  <span class="fa fa-facebook"></span>
+              </a>
+          </li>
+          <li class=" btn btn-social-icon btn-google" data-toggle="modal" id="contact">
+              <a href="{% url 'email' %}">
+                  <span class="fa fa-google"></span>
+              </a>
+          </li>
+          <li class=" btn btn-warning" data-toggle="modal" id="contact">
+              <a href="{% url 'log_in' %}">Login</a>
+          </li>
+      </div>
   </div>
 </nav>
 <!--

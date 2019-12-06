@@ -3,6 +3,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.core.mail import send_mail, BadHeaderError
 from base.forms import ContactForm
+from base.forms import SubscriberForm  
 def index(request):
 	return render(request, 'index.html', {'title':'Home'})
 	
@@ -11,6 +12,15 @@ def resume(request):
 
 def portfolio(request):
 	return render(request, 'portfolio.html', {'title':'Projects'})
+
+
+def gallery(request):
+	return render(request, 'gallery.html', {'title':'Gallery'})
+
+
+def log_in(request):
+	form = SubscriberForm()
+	return render(request, 'log_in.html', {'form': form, 'title': 'Subscriber Sign in/up'})
 
 def email(request):
 	if request.method == 'POST':

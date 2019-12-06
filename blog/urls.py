@@ -27,6 +27,8 @@ urlpatterns = [
 	path('', views.index, name = 'home'),
 	path('resume/', views.resume, name = 'resume'),
 	path('portfolio/', views.portfolio, name = 'portfolio'),
-	path('email/', views.email, name = 'email')
+	path('email/', views.email, name = 'email'),
+	path('gallery/', views.gallery, name = 'gallery'),
+	path('log_in/', views.log_in, name='log_in')
 	
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

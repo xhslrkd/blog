@@ -385,3 +385,20 @@ nav > div a.nav-item.nav-link:focus
 .tab-content {
 	margin-top: 20px;
 }
+
+.gallery-container {
+    flex-direction: column;
+    background-color:black;
+   color: white;
+   justify-content:center;
+   
+}
+
+.pick {
+    margin:10px;
+    border: 2px double white;
+}
+
+p {
+    display:inline-block;
+}

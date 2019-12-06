@@ -13,6 +13,7 @@ class Category(models.Model):
 
 class Post(models.Model):
 	title = models.CharField(max_length=100, unique=True)
+	url = models.CharField(max_length= 1000, null=True)
 	board = models.ForeignKey(Board, on_delete=models.CASCADE)
 	content = models.TextField(max_length=4000)
 	category = models.ForeignKey(Category, on_delete=models.CASCADE,related_name='posts')
@@ -21,3 +22,9 @@ class Post(models.Model):
 	created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')
 	list_filter = ['title','created_at', 'created_by']
 
+
+class Subscriber(models.Model):
+	email = models.CharField(max_length=100, unique=True)
+	pw = models.CharField(max_length=100)
+	created_at = models.DateTimeField(auto_now_add=True)
+	login_at = models.DateTimeField(null=True)

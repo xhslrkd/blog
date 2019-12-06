@@ -1,7 +1,4 @@
 from django import forms
-from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Submit
-
 class ContactForm(forms.Form):
 	Subject = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'placeholder': 'Subject'}))
 	Email = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'E-mail'}))
@@ -15,3 +12,8 @@ class ContactForm(forms.Form):
 		self.helper.form_method = 'post'
 		self.helper.form_action = 'email'
 		self.helper.add_input(Submit('submit', 'Submit'))
+
+
+class SubscriberForm(forms.Form):
+	Email =  forms.CharField(max_length=100, widget=forms.TextInput())
+	Pw =  forms.CharField(max_length=100, widget=forms.TextInput())
